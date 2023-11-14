@@ -32,7 +32,10 @@
 		}
 
 
-		public function __get(string $prop): mixed
+		/**
+		 * @return mixed
+		 */
+		public function __get(string $prop)
 		{
 			return $this->{$prop};
 		}
