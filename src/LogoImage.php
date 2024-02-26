@@ -33,8 +33,8 @@
 			$height
 		)
 		{
-			assert($width > 0);
-			assert($height > 0);
+			assert($width === NULL || $width > 0);
+			assert($height === NULL || $height > 0);
 
 			$this->path = $path;
 			$this->width = $width;
