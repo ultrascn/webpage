@@ -7,7 +7,7 @@
 
 	/**
 	 * @property-read WebSite $website
-	 * @property-read non-empty-string $title
+	 * @property-read non-empty-string|NULL $title
 	 * @property-read Content $content
 	 * @property-read Meta[] $metas
 	 * @property-read non-empty-string|NULL $language
@@ -18,7 +18,7 @@
 		/** @var WebSite */
 		private $website;
 
-		/** @var non-empty-string */
+		/** @var non-empty-string|NULL */
 		private $title;
 
 		/** @var Content */
@@ -42,7 +42,7 @@
 		 */
 		public function __construct(
 			WebSite $website,
-			$title,
+			?string $title,
 			Content $content,
 			array $metas,
 			$language,
