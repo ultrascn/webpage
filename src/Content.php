@@ -9,14 +9,14 @@
 
 
 	/**
-	 * @property-read non-empty-string $title
+	 * @property-read non-empty-string|NULL $title
 	 * @property-read IHtmlString|HtmlStringable|NULL $perex
 	 * @property-read ContentBlock[] $blocks
 	 * @property-read non-empty-string|NULL $previewImage
 	 */
 	class Content
 	{
-		/** @var non-empty-string */
+		/** @var non-empty-string|NULL */
 		private $title;
 
 		/** @var IHtmlString|HtmlStringable|NULL */
@@ -31,13 +31,13 @@
 
 
 		/**
-		 * @param non-empty-string $title
+		 * @param non-empty-string|NULL $title
 		 * @param IHtmlString|HtmlStringable|NULL $perex
 		 * @param ContentBlock[] $blocks
 		 * @param non-empty-string|NULL $previewImage
 		 */
 		public function __construct(
-			$title,
+			?string $title,
 			$perex,
 			array $blocks,
 			$previewImage = NULL
