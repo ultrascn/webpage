@@ -35,7 +35,7 @@
 
 
 		/**
-		 * @param non-empty-string $title
+		 * @param non-empty-string|NULL $title
 		 * @param Meta[] $metas
 		 * @param non-empty-string|NULL $language
 		 * @param bool $isHomepage
