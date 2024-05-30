@@ -18,7 +18,7 @@ Web page abstraction
 composer require ultrascn/webpage
 ```
 
-UltraSCN\Webpage requires PHP 7.4.0 or later.
+UltraSCN\Webpage requires PHP 7.4 or later.
 
 
 ------------------------------
